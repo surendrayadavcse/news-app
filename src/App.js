@@ -11,20 +11,20 @@ function App() {
   let [category,setCategory]=useState("india");
   let [date,setDate]=useState("2023-12-07")
   
-  // useEffect(()=>{
+  useEffect(()=>{
 
-  //        //`https://newsapi.org/v2/everything?q=${category}&from=2023-12-07&apiKey=3430e2c5c40d47be86181153c3424fdc`
-  //       fetch(`https://newsapi.org/v2/everything?q=${category}&from=${date}&apiKey=3430e2c5c40d47be86181153c3424fdc`)
-  //       .then((response)=>response.json())//extract data
-  //       .then((news)=>{
-  //         setArticles(news.articles)
-  //         console.log(news.articles)
-  //       })
-  //       .catch((err)=>{
-  //         console.log(err)
-  //       })
+       
+        fetch(`https://newsapi.org/v2/everything?q=${category}&from=2023-12-07&apiKey=3430e2c5c40d47be86181153c3424fdc`)
+        .then((response)=>response.json())//extract data
+        .then((news)=>{
+          setArticles(news.articles)
+          console.log(news.articles)
+        })
+        .catch((err)=>{
+          console.log(err)
+        })
 
-  // },[category,date])
+  },[category])
 
 
 
