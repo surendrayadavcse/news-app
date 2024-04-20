@@ -9,7 +9,7 @@ function App() {
 
   let [articles,setArticles]=useState([])
   let [category,setCategory]=useState("india");
-  let [date,setDate]=useState("2023-12-07")
+ 
   
   useEffect(()=>{
 
@@ -42,14 +42,7 @@ function App() {
           
         }} placeholder='search'></input>
 
-        <input className='datestyle' type='date' onChange={(event)=>{
-          if(event.target.value!==""){
-            setDate(event.target.value)
-
-          }else{
-            setDate("2023-12-07")
-          }
-        }}></input>
+       
         </header>
 
       <section className='news-articles'>
