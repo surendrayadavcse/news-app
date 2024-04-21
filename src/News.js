@@ -6,7 +6,7 @@ export default function News(props){
 
         {
          props.article.urlToImage!==null?
-         <img alt=img2 className="img" src={props.article.urlToImage}></img>:
+         <img alt="img2" className="img" src={props.article.urlToImage}></img>:
         
          <img src="https://t3.ftcdn.net/jpg/04/34/72/82/240_F_434728286_OWQQvAFoXZLdGHlObozsolNeuSxhpr84.jpg" alt="image1"></img>
         }
