@@ -13,10 +13,12 @@ function App() {
   
   useEffect(()=>{
 
-     
-        // fetch(`https://newsapi.org/v2/everything?q=${category}&apiKey=3430e2c5c40d47be86181153c3424fdc`)
-        fetch("https://newsapi.org/v2/everything?q=india&apiKey=3430e2c5c40d47be86181153c3424fdc")
-        .then((response)=>response.json())//extract data
+       // fetch("https://newsapi.org/v2/everything?q=india&apiKey=3430e2c5c40d47be86181153c3424fdc")
+        
+    
+    
+    fetch(`https://newsapi.org/v2/everything?q=${category}&apiKey=3430e2c5c40d47be86181153c3424fdc`)
+      .then((response)=>response.json())//extract data
         .then((news)=>{
           console.log(news)
           
